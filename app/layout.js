@@ -72,8 +72,8 @@ export default function MainLayout({ children }) {
                         </svg>
                         <span>Home</span>
                       </a>
-                      <a
-                        href="#"
+                      <Link
+                        href="receive"
                         className="text-sm font-medium flex items-center space-x-2 px-3 py-2 rounded text-gray-600 border border-transparent hover:text-blue-500 hover:bg-blue-50 hover:border-blue-50 active:bg-blue-100 active:border-blue-100"
                       >
                         <svg
@@ -89,7 +89,7 @@ export default function MainLayout({ children }) {
                           />
                         </svg>
                         <span>Receive</span>
-                      </a>
+                      </Link>
                       <Link
                         href="/deliver"
                         className="text-sm font-medium flex items-center space-x-2 px-3 py-2 rounded text-gray-600 border border-transparent hover:text-blue-500 hover:bg-blue-50 hover:border-blue-50 active:bg-blue-100 active:border-blue-100"
