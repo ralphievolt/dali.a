@@ -1,3 +1,5 @@
+"use client";
+
 import "../../styles/globals.css";
 
 export default function Deliver() {
@@ -9,8 +11,10 @@ export default function Deliver() {
           <div className="p-5 lg:p-6 grow w-full md:w-3/4 lg:w-3/5 xl:w-2/5 mx-auto">
             {/* Heading */}
             <div className="text-center mt-5">
-              <h1 className="text-2xl font-bold mb-1">Delivery Information</h1>
-              <p className="text-sm text-gray-600 font-medium mb-5">
+              <h1 className="text-2xl font-bold mb-1 text-purple-700">
+                Delivery Information
+              </h1>
+              <p className="text-sm text-green-700 font-medium mb-5">
                 Enter complete job information for delivery
               </p>
             </div>
@@ -22,7 +26,7 @@ export default function Deliver() {
                 <div className="space-y-6 p-4 rounded border bg-gray-50">
                   <div className="space-y-1">
                     <input
-                      className="block border placeholder-gray-400 px-5 py-3 leading-6 w-full rounded border-gray-200 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+                      className="block border placeholder-gray-400 px-5 py-3 leading-6 w-full rounded border-gray-200 focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50"
                       type="text"
                       id="job_number"
                       name="job_number"
@@ -31,7 +35,7 @@ export default function Deliver() {
                   </div>
                   <div className="space-y-1">
                     <input
-                      className="block border placeholder-gray-400 px-5 py-3 leading-6 w-full rounded border-gray-200 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+                      className="block border placeholder-gray-400 px-5 py-3 leading-6 w-full rounded border-gray-200 focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50"
                       type="text"
                       id="job_description"
                       name="job_description"
@@ -45,7 +49,7 @@ export default function Deliver() {
                       Project Manager
                     </label>
                     <input
-                      className="block border placeholder-gray-400 px-5 py-3 leading-6 w-full rounded border-gray-200 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+                      className="block border placeholder-gray-400 px-5 py-3 leading-6 w-full rounded border-gray-200 focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50"
                       type="text"
                       id="project_manager"
                       name="project_manager"
@@ -56,7 +60,7 @@ export default function Deliver() {
                       Model Maker
                     </label>
                     <input
-                      className="block border placeholder-gray-400 px-5 py-3 leading-6 w-full rounded border-gray-200 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+                      className="block border placeholder-gray-400 px-5 py-3 leading-6 w-full rounded border-gray-200 focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50"
                       type="text"
                       id="model_maker"
                       name="model_maker"
@@ -68,7 +72,7 @@ export default function Deliver() {
                         QA Inspector
                       </label>
                       <input
-                        className="block border placeholder-gray-400 px-5 py-3 leading-6 w-full rounded border-gray-200 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+                        className="block border placeholder-gray-400 px-5 py-3 leading-6 w-full rounded border-gray-200 focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50"
                         type="text"
                         id="qa_inspector"
                         name="qa_inspector"
@@ -82,7 +86,7 @@ export default function Deliver() {
                         Delivery Percentage
                       </label>
                       <input
-                        className="block border placeholder-gray-400 px-5 py-3 leading-6 w-full rounded border-gray-200 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+                        className="block border placeholder-gray-400 px-5 py-3 leading-6 w-full rounded border-gray-200 focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50"
                         type="text"
                         id="delivery_percentage"
                         name="delivery_percentage"
@@ -95,7 +99,7 @@ export default function Deliver() {
                 </div>
                 <button
                   type="submit"
-                  className="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none w-full px-4 py-3 leading-6 rounded border-blue-700 bg-blue-700 text-white hover:text-white hover:bg-blue-800 hover:border-blue-800 focus:ring focus:ring-blue-500 focus:ring-opacity-50 active:bg-blue-700 active:border-blue-700"
+                  className="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none w-full px-4 py-3 leading-6 rounded border-purple-700 bg-purple-700 text-white hover:text-white hover:bg-purple-800 hover:border-purple-800 focus:ring focus:ring-purple-500 focus:ring-opacity-50 active:bg-purple-700 active:border-purple-700"
                 >
                   <span>Submit</span>
                 </button>

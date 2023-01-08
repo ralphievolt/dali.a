@@ -34,13 +34,13 @@ export default function MainLayout({ children }) {
                     {/* Logo */}
                     <Link
                       href="/"
-                      className="group inline-flex items-center space-x-2 font-bold text-lg tracking-wide text-gray-700 hover:text-blue-600 active:text-gray-700"
+                      className="group inline-flex items-center space-x-2 font-bold text-lg tracking-wide text-gray-700 hover:text-purple-600 active:text-gray-700"
                     >
                       <svg
                         fill="currentColor"
                         viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="opacity-90 text-blue-600 transform transition group-hover:scale-110 hi-solid hi-cube-transparent inline-block w-5 h-5"
+                        className="opacity-90 text-purple-600 transform transition group-hover:scale-110 hi-solid hi-cube-transparent inline-block w-5 h-5"
                       >
                         <path
                           fillRule="evenodd"
@@ -60,7 +60,7 @@ export default function MainLayout({ children }) {
                     <nav className="hidden lg:flex lg:items-center lg:space-x-2">
                       <a
                         href="/"
-                        className="text-sm font-medium flex items-center space-x-2 px-3 py-2 rounded border border-blue-50 bg-blue-50 text-blue-500"
+                        className="text-sm font-medium flex items-center space-x-2 px-3 py-2 rounded border border-purple-50 bg-purple-50 text-purple-500"
                       >
                         <svg
                           fill="currentColor"
@@ -74,7 +74,7 @@ export default function MainLayout({ children }) {
                       </a>
                       <Link
                         href="/receive"
-                        className="text-sm font-medium flex items-center space-x-2 px-3 py-2 rounded text-gray-600 border border-transparent hover:text-blue-500 hover:bg-blue-50 hover:border-blue-50 active:bg-blue-100 active:border-blue-100"
+                        className="text-sm font-medium flex items-center space-x-2 px-3 py-2 rounded text-gray-600 border border-transparent hover:text-purple-500 hover:bg-purple-50 hover:border-purple-50 active:bg-purple-100 active:border-purple-100"
                       >
                         <svg
                           fill="currentColor"
@@ -92,7 +92,7 @@ export default function MainLayout({ children }) {
                       </Link>
                       <Link
                         href="/deliver"
-                        className="text-sm font-medium flex items-center space-x-2 px-3 py-2 rounded text-gray-600 border border-transparent hover:text-blue-500 hover:bg-blue-50 hover:border-blue-50 active:bg-blue-100 active:border-blue-100"
+                        className="text-sm font-medium flex items-center space-x-2 px-3 py-2 rounded text-gray-600 border border-transparent hover:text-purple-500 hover:bg-purple-50 hover:border-purple-50 active:bg-purple-100 active:border-purple-100"
                       >
                         <svg
                           fill="currentColor"
@@ -111,7 +111,7 @@ export default function MainLayout({ children }) {
                       </Link>
                       <a
                         href="/jobs"
-                        className="text-sm font-medium flex items-center space-x-2 px-3 py-2 rounded text-gray-600 border border-transparent hover:text-blue-500 hover:bg-blue-50 hover:border-blue-50 active:bg-blue-100 active:border-blue-100"
+                        className="text-sm font-medium flex items-center space-x-2 px-3 py-2 rounded text-gray-600 border border-transparent hover:text-purple-500 hover:bg-purple-50 hover:border-purple-50 active:bg-purple-100 active:border-purple-100"
                       >
                         <svg
                           fill="currentColor"
@@ -228,7 +228,7 @@ export default function MainLayout({ children }) {
                   <nav className="flex flex-col space-y-2 py-4 border-t">
                     <a
                       href="/"
-                      className="text-sm font-medium flex items-center space-x-2 px-3 py-2 rounded border border-blue-50 bg-blue-50 text-blue-500"
+                      className="text-sm font-medium flex items-center space-x-2 px-3 py-2 rounded border border-purple-50 bg-purple-50 text-purple-500"
                     >
                       <svg
                         fill="currentColor"
@@ -242,7 +242,7 @@ export default function MainLayout({ children }) {
                     </a>
                     <a
                       href="/receive"
-                      className="text-sm font-medium flex items-center space-x-2 px-3 py-2 rounded text-gray-600 border border-transparent hover:text-blue-500 hover:bg-blue-50 hover:border-blue-50 active:bg-blue-100 active:border-blue-100"
+                      className="text-sm font-medium flex items-center space-x-2 px-3 py-2 rounded text-gray-600 border border-transparent hover:text-purple-500 hover:bg-purple-50 hover:border-purple-50 active:bg-purple-100 active:border-purple-100"
                     >
                       <svg
                         fill="currentColor"
@@ -260,7 +260,7 @@ export default function MainLayout({ children }) {
                     </a>
                     <a
                       href="/deliver"
-                      className="text-sm font-medium flex items-center space-x-2 px-3 py-2 rounded text-gray-600 border border-transparent hover:text-blue-500 hover:bg-blue-50 hover:border-blue-50 active:bg-blue-100 active:border-blue-100"
+                      className="text-sm font-medium flex items-center space-x-2 px-3 py-2 rounded text-gray-600 border border-transparent hover:text-purple-500 hover:bg-purple-50 hover:border-purple-50 active:bg-purple-100 active:border-purple-100"
                     >
                       <svg
                         fill="currentColor"
@@ -279,7 +279,7 @@ export default function MainLayout({ children }) {
                     </a>
                     <a
                       href="/jobs"
-                      className="text-sm font-medium flex items-center space-x-2 px-3 py-2 rounded text-gray-600 border border-transparent hover:text-blue-500 hover:bg-blue-50 hover:border-blue-50 active:bg-blue-100 active:border-blue-100"
+                      className="text-sm font-medium flex items-center space-x-2 px-3 py-2 rounded text-gray-600 border border-transparent hover:text-purple-500 hover:bg-purple-50 hover:border-purple-50 active:bg-purple-100 active:border-purple-100"
                     >
                       <svg
                         fill="currentColor"
@@ -314,7 +314,7 @@ export default function MainLayout({ children }) {
               <div className="text-center flex flex-col md:text-left md:flex-row md:justify-between text-sm container xl:max-w-7xl mx-auto px-4 lg:px-8">
                 <div className="pt-4 pb-1 md:pb-4">
                   <a
-                    className="font-medium text-blue-600 hover:text-blue-400"
+                    className="font-medium text-purple-600 hover:text-purple-400"
                     target="_blank"
                   >
                     dali.a
