@@ -59,7 +59,7 @@ export default function MainLayout({ children }) {
                     {/* Desktop Navigation */}
                     <nav className="hidden lg:flex lg:items-center lg:space-x-2">
                       <a
-                        href="#"
+                        href="/"
                         className="text-sm font-medium flex items-center space-x-2 px-3 py-2 rounded border border-blue-50 bg-blue-50 text-blue-500"
                       >
                         <svg
@@ -73,7 +73,7 @@ export default function MainLayout({ children }) {
                         <span>Home</span>
                       </a>
                       <Link
-                        href="receive"
+                        href="/receive"
                         className="text-sm font-medium flex items-center space-x-2 px-3 py-2 rounded text-gray-600 border border-transparent hover:text-blue-500 hover:bg-blue-50 hover:border-blue-50 active:bg-blue-100 active:border-blue-100"
                       >
                         <svg
@@ -110,7 +110,7 @@ export default function MainLayout({ children }) {
                         <span>Deliver</span>
                       </Link>
                       <a
-                        href="#"
+                        href="/jobs"
                         className="text-sm font-medium flex items-center space-x-2 px-3 py-2 rounded text-gray-600 border border-transparent hover:text-blue-500 hover:bg-blue-50 hover:border-blue-50 active:bg-blue-100 active:border-blue-100"
                       >
                         <svg
@@ -227,7 +227,7 @@ export default function MainLayout({ children }) {
                 <div className={`lg:hidden ${mobileNavOpen ? "" : "hidden"}`}>
                   <nav className="flex flex-col space-y-2 py-4 border-t">
                     <a
-                      href="#"
+                      href="/"
                       className="text-sm font-medium flex items-center space-x-2 px-3 py-2 rounded border border-blue-50 bg-blue-50 text-blue-500"
                     >
                       <svg
@@ -241,7 +241,7 @@ export default function MainLayout({ children }) {
                       <span>Home</span>
                     </a>
                     <a
-                      href="#"
+                      href="/receive"
                       className="text-sm font-medium flex items-center space-x-2 px-3 py-2 rounded text-gray-600 border border-transparent hover:text-blue-500 hover:bg-blue-50 hover:border-blue-50 active:bg-blue-100 active:border-blue-100"
                     >
                       <svg
@@ -259,7 +259,7 @@ export default function MainLayout({ children }) {
                       <span>Receive</span>
                     </a>
                     <a
-                      href="#"
+                      href="/deliver"
                       className="text-sm font-medium flex items-center space-x-2 px-3 py-2 rounded text-gray-600 border border-transparent hover:text-blue-500 hover:bg-blue-50 hover:border-blue-50 active:bg-blue-100 active:border-blue-100"
                     >
                       <svg
@@ -278,7 +278,7 @@ export default function MainLayout({ children }) {
                       <span>Deliver</span>
                     </a>
                     <a
-                      href="#"
+                      href="/jobs"
                       className="text-sm font-medium flex items-center space-x-2 px-3 py-2 rounded text-gray-600 border border-transparent hover:text-blue-500 hover:bg-blue-50 hover:border-blue-50 active:bg-blue-100 active:border-blue-100"
                     >
                       <svg

@@ -22,8 +22,16 @@ export default function Receive() {
               <form className="space-y-6">
                 <div className="space-y-6 p-4 rounded border bg-gray-50">
                   <div className="space-y-1">
-                    <span>Job Information</span>
-                    <h4 className="text-lg font-bold ">Job # : 74201</h4>
+                    <label htmlFor="job_number" className="font-medium">
+                      Job Information
+                    </label>
+                    <input
+                      className="block border placeholder-gray-400 px-5 py-3 leading-6 w-full rounded border-gray-200 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+                      type="text"
+                      id="job_number"
+                      name="job_number"
+                      placeholder="Enter Job Number"
+                    />
                     <p className="leading-relaxed text-gray-600 mt-1">
                       We carefully handcrafted a vast collection of UI
                       components to build all kinds of web applications.
@@ -57,7 +65,7 @@ export default function Receive() {
                 <div className="rounded border p-4 text-sm text-gray-600 font-medium text-center">
                   Date & Time Received:{"  "}
                   <h2 className="text-lg font-bold ">
-                    {date.format(new Date(), "ddd, MMM DD YYYY HH:mm:ss")}
+                    {date.format(new Date(), "ddd, MMM DD YYYY h:mm A")}
                   </h2>
                 </div>
                 <button
