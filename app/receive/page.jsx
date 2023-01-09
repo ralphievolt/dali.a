@@ -4,20 +4,50 @@ import "../../styles/globals.css";
 import date from "date-and-time";
 import React from "react";
 import { QrScanner } from "@yudiel/react-qr-scanner";
+import { Button, Modal } from "flowbite-react";
 
 export default function Receive() {
   const [job, setJob] = React.useState("");
   const [receiver, setReceiver] = React.useState("");
-  const [receiverId, setReceiverId] = React.useState("");
-  const [data, setData] = React.useState("No result");
+  const [receiverId, setReceiverId] = React.useState("--------");
   const [showModal, setShowModal] = React.useState(false);
 
   const handleSubmit = () => {
     // console.log(job, receiverId, receiver);
   };
 
-  const handleSearch = (e) => {
-    console.log(job);
+  const handleSearch = () => {
+    // console.log(job);
+  };
+
+  const renderModal = () => {
+    return (
+      <React.Fragment>
+        <Button onClick={() => setShowModal(true)}>Toggle modal</Button>
+        <Modal show={showModal} onClick={() => setShowModal(false)} size="lg" c>
+          <Modal.Header>
+            <div className="text-purple-700">Scan Receiver's Id</div>
+          </Modal.Header>
+          <Modal.Body>
+            <div className="space-y-4">
+              <p className="text-base leading-relaxed text-gray-500 ">
+                <QrScanner
+                  onDecode={(result) => setReceiverId(result)}
+                  onError={(error) => setReceiverId("-------")}
+                  ViewFinder={false}
+                />
+              </p>
+              <p className="text-base leading-relaxed text-purple-700 ">
+                {receiverId}
+              </p>
+            </div>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button onClick={() => setShowModal(false)}>Save</Button>
+          </Modal.Footer>
+        </Modal>
+      </React.Fragment>
+    );
   };
   return (
     <div className="bg-gray-100">
@@ -70,6 +100,9 @@ export default function Receive() {
                   <p className="leading-relaxed text-gray-600 mt-1">
                     --- job description will appear here --
                   </p>
+                  <h2 className="leading-relaxed text-gray-600 mt-1 text-lg font-medium">
+                    Delivery Percentage: 100%
+                  </h2>
                 </div>
               </div>
               <div className="space-y-2 p-4 rounded border bg-gray-50">
@@ -110,48 +143,7 @@ export default function Receive() {
                 <span>Submit</span>
               </button>
 
-              {showModal ? (
-                <>
-                  <div className="flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-                    <div className="relative w-auto my-6 mx-auto max-w-3xl">
-                      <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-                        <div className="flex items-start justify-between p-5 border-b border-solid border-gray-300 rounded-t ">
-                          <h3 className="text-xl font=semibold">
-                            Scan Barcode
-                          </h3>
-                        </div>
-                        <div className="relative p-6 flex-auto">
-                          <QrScanner
-                            onDecode={(result) => setReceiverId(result)}
-                            onError={(error) => setReceiverId(error)}
-                            ViewFinder={false}
-                          />
-                          <label htmlFor="receiverId" className="font-medium">
-                            {receiverId}
-                          </label>
-                        </div>
-
-                        <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
-                          <button
-                            className="background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1"
-                            type="button"
-                            onClick={() => setShowModal(false)}
-                          >
-                            Close
-                          </button>
-                          <button
-                            className="text-white bg-purple-800 active:bg-purple-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-                            type="button"
-                            onClick={() => setShowModal(false)}
-                          >
-                            Save
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </>
-              ) : null}
+              {showModal ? renderModal() : null}
             </div>
             {/* END Checkout Form */}
           </div>
