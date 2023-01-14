@@ -1,18 +1,13 @@
 "use client";
 
+import Jobslist from "../components/Jobslist";
+
 export default function Home() {
   return (
-    <main id="page-content" className="flex flex-auto flex-col max-w-full">
-      {/* Page Section */}
-      <div className="container xl:max-w-7xl mx-auto p-4 lg:p-8">
-        {/*ADD YOUR MAIN CONTENT BELOW*/}
-
-        {/* Placeholder */}
-        <div className="flex items-center justify-center rounded-xl bg-gray-50 border-2 border-dashed border-gray-200 text-gray-400 py-64">
-          Content (max width 1280px)
-        </div>
+    <div className="bg-gray-100">
+      <div className="container xl:max-w-7xl mx-auto px-4 py-2 lg:px-8 lg:py-2">
+        <Jobslist />
       </div>
-      {/* END Page Section */}
-    </main>
+    </div>
   );
 }
