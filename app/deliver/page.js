@@ -23,59 +23,41 @@ export default function Deliver() {
             {/* Checkout Form */}
             <div className="space-y-6">
               <form className="space-y-6">
-                <div className="space-y-6 p-4 rounded border bg-gray-50">
-                  <div className="space-y-1">
+                <div className="space-y-6 p-4 rounded border bg-gray-50 sm:space-y-0 sm:flex sm:space-x-3">
+                  <div className="space-y-1 sm:w-40">
+                    <label htmlFor="job_number" className="font-medium">
+                      Job Number
+                    </label>
                     <input
                       className="block border placeholder-gray-400 px-5 py-3 leading-6 w-full rounded border-gray-200 focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50"
-                      type="text"
+                      type="number"
                       id="job_number"
                       name="job_number"
-                      placeholder="Enter Job Number"
                     />
                   </div>
-                  <div className="space-y-1">
+                  <div className="space-y-1 grow">
+                    <label htmlFor="brand_name" className="font-medium">
+                      Brand Name
+                    </label>
                     <input
                       className="block border placeholder-gray-400 px-5 py-3 leading-6 w-full rounded border-gray-200 focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50"
                       type="text"
-                      id="job_description"
-                      name="job_description"
-                      placeholder="Enter Job Description"
+                      id="brand_name"
+                      name="brand_name"
                     />
                   </div>
                 </div>
                 <div className="space-y-6 p-4 rounded border bg-gray-50">
-                  <div className="space-y-1">
-                    <label htmlFor="project_manager" className="font-medium">
-                      Project Manager
-                    </label>
-                    <input
-                      className="block border placeholder-gray-400 px-5 py-3 leading-6 w-full rounded border-gray-200 focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50"
-                      type="text"
-                      id="project_manager"
-                      name="project_manager"
-                    />
-                  </div>
-                  <div className="space-y-1">
-                    <label htmlFor="model_maker" className="font-medium">
-                      Model Maker
-                    </label>
-                    <input
-                      className="block border placeholder-gray-400 px-5 py-3 leading-6 w-full rounded border-gray-200 focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50"
-                      type="text"
-                      id="model_maker"
-                      name="model_maker"
-                    />
-                  </div>
                   <div className="space-y-6 sm:space-y-0 sm:flex sm:space-x-3">
                     <div className="space-y-1 grow">
-                      <label htmlFor="qa_inspector" className="font-medium">
-                        QA Inspector
+                      <label htmlFor="project_manager" className="font-medium">
+                        Project Manager
                       </label>
                       <input
                         className="block border placeholder-gray-400 px-5 py-3 leading-6 w-full rounded border-gray-200 focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50"
                         type="text"
-                        id="qa_inspector"
-                        name="qa_inspector"
+                        id="project_manager"
+                        name="project_manager"
                       />
                     </div>
                     <div className="space-y-1 sm:w-40">
@@ -87,11 +69,22 @@ export default function Deliver() {
                       </label>
                       <input
                         className="block border placeholder-gray-400 px-5 py-3 leading-6 w-full rounded border-gray-200 focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50"
-                        type="text"
+                        type="number"
                         id="delivery_percentage"
                         name="delivery_percentage"
                       />
                     </div>
+                  </div>
+                  <div className="space-y-1">
+                    <label htmlFor="project_manager" className="font-medium">
+                      QA Inspector
+                    </label>
+                    <input
+                      className="block border placeholder-gray-400 px-5 py-3 leading-6 w-full rounded border-gray-200 focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50"
+                      type="text"
+                      id="qa_inspector"
+                      name="project_manager"
+                    />
                   </div>
                 </div>
                 <div className="rounded border p-4 text-sm text-gray-600 font-medium text-center">
